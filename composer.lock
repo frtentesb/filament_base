@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1daf6d44d5930293001677563f77537a",
+    "content-hash": "fbdf05ecdf337a14779c2d09698ea20b",
     "packages": [
         {
             "name": "anourvalar/eloquent-serialize",
@@ -71,6 +71,111 @@
                 "source": "https://github.com/AnourValar/eloquent-serialize/tree/1.2.27"
             },
             "time": "2024-11-30T08:27:24+00:00"
+        },
+        {
+            "name": "archtechx/helpers",
+            "version": "v0.3.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/archtechx/helpers.git",
+                "reference": "818d7235be3720316d985f7a23bdc8e72b4a9d9a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/archtechx/helpers/zipball/818d7235be3720316d985f7a23bdc8e72b4a9d9a",
+                "reference": "818d7235be3720316d985f7a23bdc8e72b4a9d9a",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^10.0|^11.0",
+                "php": "^8.2"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^8.0|^9.0",
+                "pestphp/pest": "^2.0",
+                "pestphp/pest-plugin-laravel": "^2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Samuel Štancl",
+                    "email": "samuel@archte.ch"
+                }
+            ],
+            "description": "A collection of helpers we commonly use.",
+            "support": {
+                "source": "https://github.com/archtechx/helpers/tree/v0.3.2"
+            },
+            "time": "2024-03-29T01:08:57+00:00"
+        },
+        {
+            "name": "archtechx/money",
+            "version": "v0.5.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/archtechx/money.git",
+                "reference": "b642e32a4be5e0b82a099eaf893db0c6f322cccf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/archtechx/money/zipball/b642e32a4be5e0b82a099eaf893db0c6f322cccf",
+                "reference": "b642e32a4be5e0b82a099eaf893db0c6f322cccf",
+                "shasum": ""
+            },
+            "require": {
+                "archtechx/helpers": "^0.3.2",
+                "illuminate/support": "^10.0|^11.0",
+                "php": "^8.2"
+            },
+            "require-dev": {
+                "nunomaduro/larastan": "^2.4",
+                "orchestra/testbench": "^8.0|^9.0",
+                "pestphp/pest": "^2.0",
+                "pestphp/pest-plugin-laravel": "^2.0",
+                "phpstan/phpstan": "^1.9.8"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "ArchTech\\Money\\MoneyServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helpers.php",
+                    "src/Wireable.php"
+                ],
+                "psr-4": {
+                    "ArchTech\\Money\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Samuel Štancl",
+                    "email": "samuel@archte.ch"
+                }
+            ],
+            "description": "A lightweight package for handling money math in PHP.",
+            "support": {
+                "issues": "https://github.com/archtechx/money/issues",
+                "source": "https://github.com/archtechx/money/tree/v0.5.2"
+            },
+            "time": "2024-12-29T02:10:59+00:00"
         },
         {
             "name": "blade-ui-kit/blade-heroicons",
@@ -1959,6 +2064,217 @@
             "time": "2023-12-03T19:50:20+00:00"
         },
         {
+            "name": "jaybizzle/crawler-detect",
+            "version": "v1.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/JayBizzle/Crawler-Detect.git",
+                "reference": "e5ebe17f5a30a7840d059206447adfe0db60d15f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/JayBizzle/Crawler-Detect/zipball/e5ebe17f5a30a7840d059206447adfe0db60d15f",
+                "reference": "e5ebe17f5a30a7840d059206447adfe0db60d15f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8|^5.5|^6.5|^9.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Jaybizzle\\CrawlerDetect\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mark Beech",
+                    "email": "m@rkbee.ch",
+                    "role": "Developer"
+                }
+            ],
+            "description": "CrawlerDetect is a PHP class for detecting bots/crawlers/spiders via the user agent",
+            "homepage": "https://github.com/JayBizzle/Crawler-Detect/",
+            "keywords": [
+                "crawler",
+                "crawler detect",
+                "crawler detector",
+                "crawlerdetect",
+                "php crawler detect"
+            ],
+            "support": {
+                "issues": "https://github.com/JayBizzle/Crawler-Detect/issues",
+                "source": "https://github.com/JayBizzle/Crawler-Detect/tree/v1.3.1"
+            },
+            "time": "2025-01-20T19:31:14+00:00"
+        },
+        {
+            "name": "jenssegers/agent",
+            "version": "v2.6.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jenssegers/agent.git",
+                "reference": "daa11c43729510b3700bc34d414664966b03bffe"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jenssegers/agent/zipball/daa11c43729510b3700bc34d414664966b03bffe",
+                "reference": "daa11c43729510b3700bc34d414664966b03bffe",
+                "shasum": ""
+            },
+            "require": {
+                "jaybizzle/crawler-detect": "^1.2",
+                "mobiledetect/mobiledetectlib": "^2.7.6",
+                "php": ">=5.6"
+            },
+            "require-dev": {
+                "php-coveralls/php-coveralls": "^2.1",
+                "phpunit/phpunit": "^5.0|^6.0|^7.0"
+            },
+            "suggest": {
+                "illuminate/support": "Required for laravel service providers"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "aliases": {
+                        "Agent": "Jenssegers\\Agent\\Facades\\Agent"
+                    },
+                    "providers": [
+                        "Jenssegers\\Agent\\AgentServiceProvider"
+                    ]
+                },
+                "branch-alias": {
+                    "dev-master": "3.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Jenssegers\\Agent\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jens Segers",
+                    "homepage": "https://jenssegers.com"
+                }
+            ],
+            "description": "Desktop/mobile user agent parser with support for Laravel, based on Mobiledetect",
+            "homepage": "https://github.com/jenssegers/agent",
+            "keywords": [
+                "Agent",
+                "browser",
+                "desktop",
+                "laravel",
+                "mobile",
+                "platform",
+                "user agent",
+                "useragent"
+            ],
+            "support": {
+                "issues": "https://github.com/jenssegers/agent/issues",
+                "source": "https://github.com/jenssegers/agent/tree/v2.6.4"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/jenssegers",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/jenssegers/agent",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-06-13T08:05:20+00:00"
+        },
+        {
+            "name": "joaopaulolndev/filament-edit-profile",
+            "version": "v1.0.33",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/joaopaulolndev/filament-edit-profile.git",
+                "reference": "990f7d19c50a0239711a530308aca5adf21c9343"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/joaopaulolndev/filament-edit-profile/zipball/990f7d19c50a0239711a530308aca5adf21c9343",
+                "reference": "990f7d19c50a0239711a530308aca5adf21c9343",
+                "shasum": ""
+            },
+            "require": {
+                "filament/filament": "^3.0",
+                "jenssegers/agent": "^2.6",
+                "php": "^8.1",
+                "spatie/laravel-package-tools": "^1.15.0"
+            },
+            "require-dev": {
+                "laradumps/laradumps": "^3.1",
+                "laravel/pint": "^1.0",
+                "nunomaduro/collision": "^7.9|^8.0",
+                "orchestra/testbench": "^8.0|^9.0",
+                "pestphp/pest": "^2.1",
+                "pestphp/pest-plugin-arch": "^2.0",
+                "pestphp/pest-plugin-laravel": "^2.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "aliases": {
+                        "FilamentEditProfile": "Joaopaulolndev\\FilamentEditProfile\\Facades\\FilamentEditProfile"
+                    },
+                    "providers": [
+                        "Joaopaulolndev\\FilamentEditProfile\\FilamentEditProfileServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Joaopaulolndev\\FilamentEditProfile\\": "src/",
+                    "Joaopaulolndev\\FilamentEditProfile\\Database\\Factories\\": "database/factories/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "João Paulo Leite Nascimento",
+                    "email": "joaopauloln7@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Filament package to edit profile",
+            "homepage": "https://github.com/joaopaulolndev/filament-edit-profile",
+            "keywords": [
+                "filament-edit-profile",
+                "joaopaulolndev",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/joaopaulolndev/filament-edit-profile/issues",
+                "source": "https://github.com/joaopaulolndev/filament-edit-profile"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/joaopaulolndev",
+                    "type": "github"
+                }
+            ],
+            "time": "2024-12-05T09:43:10+00:00"
+        },
+        {
             "name": "kirschbaum-development/eloquent-power-joins",
             "version": "4.0.1",
             "source": {
@@ -2420,6 +2736,57 @@
                 "source": "https://github.com/laravel/tinker/tree/v2.10.0"
             },
             "time": "2024-09-23T13:32:56+00:00"
+        },
+        {
+            "name": "laravellegends/pt-br-validator",
+            "version": "11.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/LaravelLegends/pt-br-validator.git",
+                "reference": "ab89fcb32661bc1a95c5836489ddc68f61a95d34"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/LaravelLegends/pt-br-validator/zipball/ab89fcb32661bc1a95c5836489ddc68f61a95d34",
+                "reference": "ab89fcb32661bc1a95c5836489ddc68f61a95d34",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^6.0 || ^7.0 || ^8.0 || ^9.0 || ^10.0 || ^11.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^4.0 || ^5.0 || ^6.0 || ^7.0 || ^8.0",
+                "phpunit/phpunit": "^8.3 || ^9.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "LaravelLegends\\PtBrValidator\\ValidatorProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "LaravelLegends\\PtBrValidator\\": "src/pt-br-validator"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Wallace de Souza Vizerra",
+                    "email": "wallacemaxters@gmail.com"
+                }
+            ],
+            "description": "Uma biblioteca contendo validações de formatos Brasileiros, para o Laravel",
+            "support": {
+                "issues": "https://github.com/LaravelLegends/pt-br-validator/issues",
+                "source": "https://github.com/LaravelLegends/pt-br-validator/tree/11.0.0"
+            },
+            "time": "2024-03-18T20:18:50+00:00"
         },
         {
             "name": "league/commonmark",
@@ -3060,6 +3427,82 @@
             "time": "2024-12-08T08:18:47+00:00"
         },
         {
+            "name": "leandrocfe/filament-ptbr-form-fields",
+            "version": "3.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/leandrocfe/filament-ptbr-form-fields.git",
+                "reference": "5a101d0987b36ee0fec594d4c9c62ead9bc2c527"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/leandrocfe/filament-ptbr-form-fields/zipball/5a101d0987b36ee0fec594d4c9c62ead9bc2c527",
+                "reference": "5a101d0987b36ee0fec594d4c9c62ead9bc2c527",
+                "shasum": ""
+            },
+            "require": {
+                "archtechx/money": "^0.5.1",
+                "filament/filament": "^3.0",
+                "illuminate/contracts": "^10.0 || ^11.0",
+                "laravellegends/pt-br-validator": "^10.0 || ^11.0",
+                "moneyphp/money": "^4.5",
+                "php": "^8.1 || ^8.2 || ^8.3",
+                "spatie/laravel-package-tools": "^1.14.0"
+            },
+            "require-dev": {
+                "larastan/larastan": "^2.9.2",
+                "laravel/pint": "^1.0",
+                "nunomaduro/collision": "^7.9",
+                "orchestra/testbench": "^8.0",
+                "pestphp/pest": "^2.0",
+                "pestphp/pest-plugin-arch": "^2.0",
+                "pestphp/pest-plugin-laravel": "^2.0",
+                "phpstan/extension-installer": "^1.1",
+                "phpstan/phpstan-deprecation-rules": "^1.0",
+                "phpstan/phpstan-phpunit": "^1.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "aliases": {
+                        "FilamentPtbrFormFields": "Leandrocfe\\FilamentPtbrFormFields\\Facades\\FilamentPtbrFormFields"
+                    },
+                    "providers": [
+                        "Leandrocfe\\FilamentPtbrFormFields\\FilamentPtbrFormFieldsServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Leandrocfe\\FilamentPtbrFormFields\\": "src/",
+                    "Leandrocfe\\FilamentPtbrFormFields\\Database\\Factories\\": "database/factories/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Leandro Costa Ferreira",
+                    "email": "leandrocfe@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Brazilian pt-BR form fields.",
+            "homepage": "https://github.com/leandrocfe/filament-ptbr-form-fields",
+            "keywords": [
+                "filament-ptbr-form-fields",
+                "laravel",
+                "leandrocfe"
+            ],
+            "support": {
+                "issues": "https://github.com/leandrocfe/filament-ptbr-form-fields/issues",
+                "source": "https://github.com/leandrocfe/filament-ptbr-form-fields/tree/3.1.0"
+            },
+            "time": "2024-08-30T07:43:15+00:00"
+        },
+        {
             "name": "livewire/livewire",
             "version": "v3.5.12",
             "source": {
@@ -3201,6 +3644,156 @@
                 "source": "https://github.com/Masterminds/html5-php/tree/2.9.0"
             },
             "time": "2024-03-31T07:05:07+00:00"
+        },
+        {
+            "name": "mobiledetect/mobiledetectlib",
+            "version": "2.8.45",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/serbanghita/Mobile-Detect.git",
+                "reference": "96aaebcf4f50d3d2692ab81d2c5132e425bca266"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/serbanghita/Mobile-Detect/zipball/96aaebcf4f50d3d2692ab81d2c5132e425bca266",
+                "reference": "96aaebcf4f50d3d2692ab81d2c5132e425bca266",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.8.36"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Detection": "namespaced/"
+                },
+                "classmap": [
+                    "Mobile_Detect.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Serban Ghita",
+                    "email": "serbanghita@gmail.com",
+                    "homepage": "http://mobiledetect.net",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Mobile_Detect is a lightweight PHP class for detecting mobile devices. It uses the User-Agent string combined with specific HTTP headers to detect the mobile environment.",
+            "homepage": "https://github.com/serbanghita/Mobile-Detect",
+            "keywords": [
+                "detect mobile devices",
+                "mobile",
+                "mobile detect",
+                "mobile detector",
+                "php mobile detect"
+            ],
+            "support": {
+                "issues": "https://github.com/serbanghita/Mobile-Detect/issues",
+                "source": "https://github.com/serbanghita/Mobile-Detect/tree/2.8.45"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/serbanghita",
+                    "type": "github"
+                }
+            ],
+            "time": "2023-11-07T21:57:25+00:00"
+        },
+        {
+            "name": "moneyphp/money",
+            "version": "v4.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/moneyphp/money.git",
+                "reference": "ddf6a86b574808f8844777ed4e8c4f92a10dac9b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/moneyphp/money/zipball/ddf6a86b574808f8844777ed4e8c4f92a10dac9b",
+                "reference": "ddf6a86b574808f8844777ed4e8c4f92a10dac9b",
+                "shasum": ""
+            },
+            "require": {
+                "ext-bcmath": "*",
+                "ext-filter": "*",
+                "ext-json": "*",
+                "php": "~8.1.0 || ~8.2.0 || ~8.3.0 || ~8.4.0"
+            },
+            "require-dev": {
+                "cache/taggable-cache": "^1.1.0",
+                "doctrine/coding-standard": "^12.0",
+                "doctrine/instantiator": "^1.5.0 || ^2.0",
+                "ext-gmp": "*",
+                "ext-intl": "*",
+                "florianv/exchanger": "^2.8.1",
+                "florianv/swap": "^4.3.0",
+                "moneyphp/crypto-currencies": "^1.1.0",
+                "moneyphp/iso-currencies": "^3.4",
+                "php-http/message": "^1.16.0",
+                "php-http/mock-client": "^1.6.0",
+                "phpbench/phpbench": "^1.2.5",
+                "phpunit/phpunit": "^10.5.9",
+                "psalm/plugin-phpunit": "^0.18.4",
+                "psr/cache": "^1.0.1 || ^2.0 || ^3.0",
+                "vimeo/psalm": "~5.20.0"
+            },
+            "suggest": {
+                "ext-gmp": "Calculate without integer limits",
+                "ext-intl": "Format Money objects with intl",
+                "florianv/exchanger": "Exchange rates library for PHP",
+                "florianv/swap": "Exchange rates library for PHP",
+                "psr/cache-implementation": "Used for Currency caching"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Money\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mathias Verraes",
+                    "email": "mathias@verraes.net",
+                    "homepage": "http://verraes.net"
+                },
+                {
+                    "name": "Márk Sági-Kazár",
+                    "email": "mark.sagikazar@gmail.com"
+                },
+                {
+                    "name": "Frederik Bosch",
+                    "email": "f.bosch@genkgo.nl"
+                }
+            ],
+            "description": "PHP implementation of Fowler's Money pattern",
+            "homepage": "http://moneyphp.org",
+            "keywords": [
+                "Value Object",
+                "money",
+                "vo"
+            ],
+            "support": {
+                "issues": "https://github.com/moneyphp/money/issues",
+                "source": "https://github.com/moneyphp/money/tree/v4.6.0"
+            },
+            "time": "2024-11-22T10:59:03+00:00"
         },
         {
             "name": "monolog/monolog",
